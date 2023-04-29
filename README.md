@@ -31,3 +31,9 @@ This is a cheat sheet repo for Excel
 - `=COUNTA(A1:A10)` - Returns the number of non-empty values in the range
 - `=COUNTBLANK(A1:A10)` - Returns the number of empty values in the range
 - `=COUNTIF(A1:A10, ">10")` - Returns the number of values in the range that are greater than 10
+- `=COUNTIFS(A1:A10, ">10", B1:B10, "<20")` - Returns the number of values in the range that are greater than 10 and less than 20
+- `=SUMIF(A1:A10, ">10")` - Returns the sum of the values in the range that are greater than 10
+- `=SUMIFS(A1:A10, ">10", B1:B10, "<20")` - Returns the sum of the values in the range that are greater than 10 and less than 20
+- `=AVERAGEIF(A1:A10, ">10")` - Returns the average of the values in the range that are greater than 10
+- `=AVERAGEIFS(A1:A10, ">10", B1:B10, "<20")` - Returns the average of the values in the range that are greater than 10 and less than 20
+- `=IF(A1>10, "Greater than 10", "Less than 10")` - Returns "Greater than 10" if the value in A1 is greater than 10, otherwise returns "Less than 10"
