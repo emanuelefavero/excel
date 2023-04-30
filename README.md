@@ -10,6 +10,7 @@ This is a cheat sheet repo for Excel
 | --------------- | -------------------------- |
 | Tab             | Go to next cell in the row |
 | cmd + shift + v | Paste values without style |
+| cmd + d         | Fill down                  |
 
 ## Tips
 
@@ -17,9 +18,12 @@ This is a cheat sheet repo for Excel
 
 - You can add formulas to a cell by typing `=` and then the formula
 - After typing `=` you can click on a cell to add it to the formula (e.g. `=C4*D4`)
+- You can make any mathematical operation in a formula (e.g. `=A1+B1`)
 - You can drag the bottom right corner of a cell to copy the formula to other cells
 - Select multiple cells and drag the bottom right corner to copy the formula to multiple cells
 - If you copy a cell with a formula and paste it into another cell, the formula will be updated to use the new cell's position
+
+> Note: `A1` is a cell reference, `A` is the column and `1` is the row
 
 ### Functions
 
@@ -37,6 +41,7 @@ This is a cheat sheet repo for Excel
 - `=AVERAGEIF(A1:A10, ">10")` - Returns the average of the values in the range that are greater than 10
 - `=AVERAGEIFS(A1:A10, ">10", B1:B10, "<20")` - Returns the average of the values in the range that are greater than 10 and less than 20
 - `=IF(A1>10, "Greater than 10", "Less than 10")` - Returns "Greater than 10" if the value in A1 is greater than 10, otherwise returns "Less than 10"
+- `=OR(A1>10, B1>10)` - Returns TRUE if either A1 or B1 is greater than 10
 
 ### Absolute References
 
@@ -58,6 +63,38 @@ Conditional formatting allows you to change the style of a cell based on its val
 - Select the style you want to apply to the cell if the condition is met (e.g. "Bold")
 - Click on the "Done" button
 
+### Insert Chart
+
+- Select the cells you want to include in the chart
+- Click on the "Insert" menu and select "Chart"
+- Select the type of chart you want to insert (e.g. "Column chart")
+- Style the chart as you want
+- Add x-axis data if needed
+
+### Split Column Text to Multiple Columns
+
+- Select the column you want to split
+- Click on the "Data" menu and select "Split text to columns"
+- Select the separator you want to use (e.g. "Space")
+
+> Example: "John Doe" cell will be split into "John" and "Doe" cells in new columns
+
+### Fill Down
+
+Sometimes you want to fill down a column with the same value or formula
+
+#### Method 1
+
+- Select the cell you want to fill down
+- Click and hold the bottom right corner of the cell (the cursor should change to a cross)
+- Drag the cell down to the last cell you want to fill down
+
+#### Method 2
+
+- Select the cell you want to fill down
+- Hold down the `shift` key and press `down arrow` (or click on the last cell you want to fill down)
+- Click `cmd + d` to fill down the column
+
 ### General Tips
 
 - You can use the `=` operator to convert a value to a number (e.g. `=A1*2`)
@@ -66,3 +103,4 @@ Conditional formatting allows you to change the style of a cell based on its val
 - You can calculate the number of days between two dates by subtracting them (e.g. `=A1-A2`)
 - Double click on the column right border to auto resize the column to fit the content
 - You can rotate text in a cell by selecting the cell and then clicking on the "Text Rotation" button in the toolbar
+- You can either use `.5` or `50%` to represent 50%
