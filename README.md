@@ -11,6 +11,7 @@ This is a cheat sheet repo for Excel
 | Tab             | Go to next cell in the row |
 | cmd + shift + v | Paste values without style |
 | cmd + d         | Fill down                  |
+| cmd + a         | Select entire sheet        |
 
 ## Tips
 
@@ -42,6 +43,10 @@ This is a cheat sheet repo for Excel
 - `=AVERAGEIFS(A1:A10, ">10", B1:B10, "<20")` - Returns the average of the values in the range that are greater than 10 and less than 20
 - `=IF(A1>10, "Greater than 10", "Less than 10")` - Returns "Greater than 10" if the value in A1 is greater than 10, otherwise returns "Less than 10"
 - `=OR(A1>10, B1>10)` - Returns TRUE if either A1 or B1 is greater than 10
+- `=SUMIF(A1:A10, ">10")` - Returns the sum of the values in the range that are greater than 10
+- `=SUMIF(A1:A10, ">10", B1:B10)` - Returns the sum of the values in the range B1:B10 if the value in the range A1:A10 is greater than 10
+
+> Note: You can also return a formula in an IF statement (e.g. `=IF(A1>10, A1*2, A1*3)`)
 
 ### Absolute References
 
@@ -94,6 +99,17 @@ Sometimes you want to fill down a column with the same value or formula
 - Select the cell you want to fill down
 - Hold down the `shift` key and press `down arrow` (or click on the last cell you want to fill down)
 - Click `cmd + d` to fill down the column
+
+### Sort
+
+You can sort selected cells, columns, rows or the entire sheet
+
+- Select the cells, columns, rows or the entire sheet you want to sort (e.g. click on the top left square to select the entire sheet)
+- Click on the "Data" menu and select "Sort range" -> "Advanced range sorting options"
+- If the sheet has a header row, check the "Data has header row" checkbox
+- Select the column you want to sort by
+- Select the order you want to sort by (e.g. "A to Z")
+- Click on the "Sort" button
 
 ### General Tips
 
