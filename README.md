@@ -44,6 +44,19 @@ This is a cheat sheet repo for Excel
 - If you copy a cell with an absolute reference and paste it into another cell, the reference will not be updated
 
 > Note: It is useful to use absolute references when you are referencing a cell that you do not want to change (e.g. a constant)
+>
+> BEWARE: If the '$' symbol is placed before the column letter (e.g. `$A1`) then the column will not change when the formula is copied, but the row will and vice versa (e.g. `A$1`)
+
+### Conditional Formatting
+
+Conditional formatting allows you to change the style of a cell based on its value
+
+- Select the cells you want to apply the conditional formatting to
+- Click on the "Format" menu and select "Conditional formatting"
+- Select the type of conditional formatting you want to apply (e.g. "Greater than")
+- Enter the value you want to compare the cell to (e.g. 10), add the percentage if you want to compare it to a percentage (e.g. 10%, or use 0.1 for 10%)
+- Select the style you want to apply to the cell if the condition is met (e.g. "Bold")
+- Click on the "Done" button
 
 ### General Tips
 
@@ -52,3 +65,4 @@ This is a cheat sheet repo for Excel
 - You can add a column by right clicking on a column header and selecting "Insert 1 left"
 - You can calculate the number of days between two dates by subtracting them (e.g. `=A1-A2`)
 - Double click on the column right border to auto resize the column to fit the content
+- You can rotate text in a cell by selecting the cell and then clicking on the "Text Rotation" button in the toolbar
