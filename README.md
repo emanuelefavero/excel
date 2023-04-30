@@ -111,6 +111,24 @@ You can sort selected cells, columns, rows or the entire sheet
 - Select the order you want to sort by (e.g. "A to Z")
 - Click on the "Sort" button
 
+### Filter
+
+You can filter selected cells, columns, rows or the entire sheet
+
+#### Create a filter vs Filter Views
+
+- **Filter views**: The filter will be applied to the sheet and will be visible only to you
+- **Create a filter**: The filter will be applied to the sheet and will be visible to everyone who has access to the sheet
+
+#### Filter views
+
+- Click on the "Data" menu and select "Filter views" -> "Create new filter view"
+- Select the column you want to filter by
+- Select the condition you want to filter by (e.g. "Greater than")
+- Enter the value you want to filter by (e.g. 10)
+- Click on the "OK" button
+- Choose a name for the filter view (e.g. "Only sales from Arizona")
+
 ### General Tips
 
 - You can use the `=` operator to convert a value to a number (e.g. `=A1*2`)
