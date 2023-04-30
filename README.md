@@ -37,3 +37,18 @@ This is a cheat sheet repo for Excel
 - `=AVERAGEIF(A1:A10, ">10")` - Returns the average of the values in the range that are greater than 10
 - `=AVERAGEIFS(A1:A10, ">10", B1:B10, "<20")` - Returns the average of the values in the range that are greater than 10 and less than 20
 - `=IF(A1>10, "Greater than 10", "Less than 10")` - Returns "Greater than 10" if the value in A1 is greater than 10, otherwise returns "Less than 10"
+
+### Absolute References
+
+- You can use `$` to make a reference absolute (e.g. `$A$1`)
+- If you copy a cell with an absolute reference and paste it into another cell, the reference will not be updated
+
+> Note: It is useful to use absolute references when you are referencing a cell that you do not want to change (e.g. a constant)
+
+### General Tips
+
+- You can use the `=` operator to convert a value to a number (e.g. `=A1*2`)
+- You can click on a column header to select the entire column
+- You can add a column by right clicking on a column header and selecting "Insert 1 left"
+- You can calculate the number of days between two dates by subtracting them (e.g. `=A1-A2`)
+- Double click on the column right border to auto resize the column to fit the content
