@@ -129,6 +129,21 @@ You can filter selected cells, columns, rows or the entire sheet
 - Click on the "OK" button
 - Choose a name for the filter view (e.g. "Only sales from Arizona")
 
+### Pivot Table
+
+A Pivot Table allows you to summarize data from a table into a new table
+
+- Select the cells you want to include in the pivot table
+- Click on the "Insert" menu and select "Pivot table"
+
+> Note: A new sheet will be created with the pivot table
+
+- Go to the "Pivot table editor" section on the right
+- Select either the suggested pivot table or create your own by selecting the columns, rows, values or filters you want to include in the pivot table
+- Click on the "Add" button
+
+> TIP: You can then insert a chart based on the pivot table
+
 ### General Tips
 
 - You can use the `=` operator to convert a value to a number (e.g. `=A1*2`)
