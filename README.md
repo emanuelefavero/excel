@@ -28,6 +28,8 @@ This is a cheat sheet repo for Excel
 
 ### Functions
 
+#### Numbers
+
 - `=MAX(A1:A10)` - Returns the maximum value in the range
 - `=MIN(A1:A10)` - Returns the minimum value in the range
 - `=SUM(A1:A10)` - Returns the sum of the values in the range
@@ -47,6 +49,17 @@ This is a cheat sheet repo for Excel
 - `=SUMIF(A1:A10, ">10", B1:B10)` - Returns the sum of the values in the range B1:B10 if the value in the range A1:A10 is greater than 10
 
 > Note: You can also return a formula in an IF statement (e.g. `=IF(A1>10, A1*2, A1*3)`)
+
+#### Dates
+
+- `=YEAR(TODAY())` - Returns the current year
+- `=TEXT(YEAR(TODAY()),"YY")` - Returns the current year in two digits (YY) format
+- `=TEXT(TODAY(),"DD/MM/YYYY")` - Returns the current date in DD/MM/YYYY format
+- `=MONTH(TODAY())` - Returns the current month
+- `=DAY(TODAY())` - Returns the current day
+- `=WEEKDAY(TODAY())` - Returns the current day of the week (e.g. 1 for Sunday, 2 for Monday, etc.)
+- `=TEXT(TODAY(),"dddd")` - Returns the current day of the week (e.g. Sunday, Monday, etc.)
+- `=DATE(YEAR(TODAY()), MONTH(TODAY()), DAY(TODAY())+1)` - Returns the date of tomorrow
 
 ### Absolute References
 
@@ -151,6 +164,30 @@ A Pivot Table allows you to summarize data from a table into a new table
 - Click on the "Add" button
 
 > TIP: You can then insert a chart based on the pivot table
+
+### Lookup Table
+
+A lookup table allows you to lookup a value in a table and return a value from another column in the same row
+
+- Create a table with the values you want to lookup:
+
+> Note: Those are simply two columns with values that you can put anywhere in the sheet
+
+| B   | C        |
+| --- | -------- |
+| CR  | Chrysler |
+| FD  | Ford     |
+
+- Sort the table by the first column (e.g. "B"), if not the sorted, the lookup will not work
+
+> See [Sort](#sort)
+
+- Select the new cell you want to return the value to
+- Enter the formula `=VLOOKUP(A1, B$1:C$2, 2)`
+
+> Note: `A1` is the value you want to lookup (which in this case is placed in the A column), `B$1:C$2` is the table you want to lookup the value in, `2` is the lookup table column number you want to return the value from
+>
+> We used an absolute reference for the table because we want to be able to copy the formula to other cells
 
 ### General Tips
 
