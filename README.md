@@ -213,6 +213,12 @@ You can copy and paste Charts between Google Sheets (or Excel) and Google Docs o
 - Go to Google Docs or Slides
 - Paste the chart
 
+### Calculate the percentage of a currency value
+
+- Add a column with the value you want to calculate the percentage of (e.g. 100) and format it as currency or accounting
+- Add a column with the percentage you want to calculate (e.g. 10%)
+- Add a column with the formula `=A1*B1` (e.g. `=100*10%`)
+
 ### General Tips
 
 - You can use the `=` operator to convert a value to a number (e.g. `=A1*2`)
