@@ -61,6 +61,21 @@ This is a cheat sheet repo for Excel
 - `=TEXT(TODAY(),"dddd")` - Returns the current day of the week (e.g. Sunday, Monday, etc.)
 - `=DATE(YEAR(TODAY()), MONTH(TODAY()), DAY(TODAY())+1)` - Returns the date of tomorrow
 
+#### Text
+
+- `=CONCATENATE(A1, " ", B1)` - Returns the concatenation of the values in A1 and B1
+- `=LEFT(A1, 5)` - Returns the first 5 characters of the value in A1
+- `=RIGHT(A1, 5)` - Returns the last 5 characters of the value in A1
+- `=MID(A1, 5, 10)` - Returns 10 characters of the value in A1 starting from the 5th character
+- `=LEN(A1)` - Returns the length of the value in A1
+- `=LOWER(A1)` - Returns the value in A1 in lower case
+- `=UPPER(A1)` - Returns the value in A1 in upper case
+- `=PROPER(A1)` - Returns the value in A1 in proper case (e.g. "hello world" becomes "Hello World")
+- `=TRIM(A1)` - Returns the value in A1 with all leading and trailing spaces removed
+- `=SUBSTITUTE(A1, " ", "")` - Returns the value in A1 with all spaces removed
+
+> Note: Google Sheets and Excel have many more functions than the ones listed above
+
 ### Absolute References
 
 - You can use `$` to make a reference absolute (e.g. `$A$1`)
