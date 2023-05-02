@@ -204,6 +204,15 @@ A lookup table allows you to lookup a value in a table and return a value from a
 >
 > We used an absolute reference for the table because we want to be able to copy the formula to other cells
 
+### Copy Charts to Google Docs and Slides
+
+You can copy and paste Charts between Google Sheets (or Excel) and Google Docs or Slides (or Word or PowerPoint)
+
+- Select the chart you want to copy
+- Click on the "Edit" menu and select "Copy"
+- Go to Google Docs or Slides
+- Paste the chart
+
 ### General Tips
 
 - You can use the `=` operator to convert a value to a number (e.g. `=A1*2`)
