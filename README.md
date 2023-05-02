@@ -84,6 +84,14 @@ Conditional formatting allows you to change the style of a cell based on its val
 
 > Example: "John Doe" cell will be split into "John" and "Doe" cells in new columns
 
+### Extract Text from a Cell
+
+- `=LEFT(A1, 5)` - Returns the first 5 characters from the `A1` cell
+- `=RIGHT(A1, 5)` - Returns the last 5 characters from the `A1` cell
+- `=MID(A1, 5, 10)` - Returns 10 characters from the `A1` cell starting from the 5th character
+
+> Note: starts at 1, not 0 like many programming languages
+
 ### Fill Down
 
 Sometimes you want to fill down a column with the same value or formula
